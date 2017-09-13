@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Academy of art university | Lecture 1</title>
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement( 'link' );
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName( 'head' )[0].appendChild( link );
+	</script>
+	
+</head>
+<body>
+
+	<div class="reveal">
+		<div class="slides">
+
+            <section>
+
+                <section>
+                    <img src="./assets/logo.png" alt="AAU Logo" style="width: 160px;">
+                    <h3>Web Design 2 | WNM 250</h3>
+                    <p>Lecture 2 | September 13th, 2017</p>
+                    <p>
+                        <small>Overview Web Development</small>
+                        <br />
+                        <small>Slides & code of this lesson you can find it at: <a href="https://husamui.github.io/lesson_2.html">https://husamui.github.io/lesson_2.html</a></small>
+                    </p>
+                </section>
+
+                <section data-background="./assets/responsive.jpg">
+                    <h3>Responsive Web Development</h3>
+                    <p>Fall 2017</p>
+                    <br><br><br><br><br><br>
+                </section>
+
+                <section style="text-align: left;">
+                    <h3>Today</h3>
+                    <ul>
+                        <li class="fragment">
+                            <p>HTML5 Boilerplate <br> <small>Front-end template for building fast, robust, and adaptable web apps or sites</small></p>
+                        </li>
+
+                        <li class="fragment">
+                            <p>CSS Box<br> <small>The browser's rendering engine represents each element as a rectangular box</small></p>
+                        </li>
+
+                        <li class="fragment">
+                            <p>CSS Hacks <br> <small>Fix browser issues with hack</small></p>
+                        </li>
+                        <li class="fragment">
+                            <p>Fluid Grid <br> <small>A fluid grid that uses percentages of the total available width for the columns.</small></p>
+                        </li>
+                    </ul>
+                </section>
+
+            </section>
+
+            <section>
+                <section>
+                    <h3>HTML5 Boilerplate </h3>
+                    <p>
+                        <small style="opacity: 0.7;">HTML5 Boilerplate helps you build fast, robust, and adaptable web apps or sites. Kick-start your project with the combined knowledge and effort of 100s of developers, all in one little package.</small>
+                    </p>
+
+                </section>
+
+                <section>
+                    <h3>CSS Box Model</h3>
+                    <img src="https://www.kasandbox.org/programming-images/misc/boxmodel.png" alt="">
+                </section>
+
+                <section>
+                    <h3>CSS Hack | Clearfix</h3>
+                    <img src="https://www.webrexstudio.com//wp-content/uploads/2016/02/clearfixclass-750x510.jpg" alt="">
+                </section>
+
+                <section  style="text-align: left;">
+                    <h3>Clearfix</h3>
+                    <pre><code class="hljs">
+                        .clearfix:after {
+                            content: "";
+                            display: table;
+                            clear: both;
+                        }
+                    </code></pre>
+
+                </section>
+
+                <section>
+                    <h3>Fluid Grid</h3>
+                    <p>
+                        <small>. Fluid. A fluid grid that uses percentages of the total available width for the columns.</small>
+                    </p>
+                    <img src="http://www.webservi.com/ws_cont/uploads/webservice_webdesign.png" alt="">
+                </section>
+
+
+                <section>
+                    <h3>Build Responsive Website</h3>
+                    <a href="/assets/final.png">
+                        <img src="./assets/final.png" alt="">
+                    </a>
+                </section>
+
+                <section>
+                    <h3>Live Coding</h3>
+                    <a href="/assets/layout-idea.png">
+                        <img src="./assets/layout-idea.png" alt="">
+                    </a>
+                </section>
+
+                <section>
+                    <h3>Your Homework</h3>
+                    <a href="/assets/final.png">
+                        <img src="./assets/final.png" alt="">
+                    </a>
+                </section>
+
+            </section>
+
+
+
+        </div>
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+			]
+		});
+	</script>
+</body>
+</html>
