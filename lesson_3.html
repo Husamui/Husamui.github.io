@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Academy of art university | Lecture 3</title>
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement( 'link' );
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName( 'head' )[0].appendChild( link );
+	</script>
+	
+</head>
+<body>
+
+	<div class="reveal">
+		<div class="slides">
+
+            <section>
+
+                <section>
+                    <img src="./assets/logo.png" alt="AAU Logo" style="width: 160px;">
+                    <h3>Web Design 2 | WNM 250</h3>
+                    <p>Lecture 3 | September 20th, 2017</p>
+                    <p>
+                        <small>Overview Web Development</small>
+                        <br />
+                        <small>Slides of this lesson you can find it at: <a href="https://husamui.github.io/lesson_3.html">https://husamui.github.io/lesson_3.html</a></small>
+                    </p>
+                </section>
+
+                <section data-background="./assets/responsive.jpg">
+                    <h3>Responsive Web Development</h3>
+                    <p>Fall 2017</p>
+                    <br><br><br><br><br><br>
+                </section>
+
+                <section style="text-align: left;">
+                    <h3>Today</h3>
+                    <ul>
+                        <li class="fragment">
+                            <p>Why Responsive? <br> <small>Why is it important to put in the effort to build responsive websites?</small></p>
+                        </li>
+
+                        <li class="fragment">
+                            <p>Responsive website examples<br> <small>We will browse examples of responsive websites</small></p>
+                        </li>
+
+                        <li class="fragment">
+                            <p>CSS Media Queries<br> <small>Explain css media queries with quick demo</small></p>
+                        </li>
+
+                        <li class="fragment">
+                            <p>Build Responsive website<br> <small>Continue the process of making our web pages fluid and responsive by employing CSS media queries</small></p>
+                        </li>
+                    </ul>
+                </section>
+
+            </section>
+
+            <section>
+                <section>
+                    <h3>Why Responsive? </h3>
+                    <ul>
+                        <li class="fragment">Supporting the Multi-Device User</li>
+                        <li class="fragment">One Site to Rule Them All</li>
+                        <li class="fragment">Improved Search Engine Rankings</li>
+                        <li class="fragment">Future Scalability</li>
+                    </ul>
+
+                </section>
+
+                <section>
+                    <p>Mobile devices dominate total minutes spent online</p>
+                    <img src="assets/Mobile-share-of-online-time-percent-2017.png" alt="">
+                </section>
+
+                <section>
+                    <p>Google’s latest mobile search algorithm update makes having a mobile-friendly site even more important</p>
+                    <img src="assets/m1.png" alt="">
+                </section>
+
+
+                <section>
+                    <h3>Responsive website examples</h3>
+                    <ul>
+                        <li><a href="https://www.academyart.edu/" target="_blank">Academy of Art</a></li>
+                        <li><a href="https://mediaqueri.es/" target="_blank">mediaqueri.es | A List of Responsive websites</a></li>
+                    </ul>
+                </section>
+
+
+                <section>
+                    <h3>CSS Media Queries</h3>
+<pre class="fragment"><code class="hljs">
+@media (max-width: 500px) {
+    p{
+        color: red ;
+    }
+}</code></pre>
+<pre class="fragment"><code class="hljs">
+@media (min-width: 500px) {
+    p{
+        color: blue ;
+    }
+}</code></pre>
+                </section>
+
+                <section data-background="./assets/demo.gif">
+                    <h3>CSS Screen Media Query Demo</h3>
+                </section>
+
+                <section>
+                    <p>Demo Code | HTML</p>
+<pre class="fragment"><code class="hljs">
+<div class="box">
+  <h1>Box 1</h1>
+</div>
+
+<div class="box">
+  <h1>Box 2</h1>
+</div>
+
+<div class="box">
+  <h1>Box 3</h1>
+</div>
+
+<div class="box">
+  <h1>Box 3</h1>
+</div>
+</code></pre>
+                </section>
+                <section>
+                    <p>Demo Code | CSS</p>
+<pre class="fragment"><code class="hljs">
+.box{
+  box-sizing: border-box;
+  background: #001f3f;
+  color: #000;
+  width: 100%;
+  height: 200px;
+  margin-bottom:15px;
+  border: 1px solid #000;
+  text-align: center;
+}
+@media  (min-width: 500px) {
+  .box{
+    width: 50%;
+    float: left;
+  }
+}
+
+@media  (min-width: 900px) {
+  .box{
+    width: 33.333%;
+  }
+}
+
+@media  (min-width: 1200px) {
+  .box{
+    width: 25%;
+  }
+}
+</code></pre>
+                </section>
+
+                <section data-background="./assets/yes.gif">
+                </section>
+
+                <section>
+                    <h3>Make our website complete responsive</h3>
+                    <img src="assets/final.png" alt="">
+                </section>
+
+            </section>
+
+
+
+        </div>
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+			]
+		});
+	</script>
+</body>
+</html>
