@@ -1,0 +1,307 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Academy of art university | Lecture 4</title>
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement( 'link' );
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName( 'head' )[0].appendChild( link );
+	</script>
+    <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+
+    <style>
+        body{
+            perspective: 400px;
+            -webkit-perspective: 400px;
+        }
+        #box, #box2, #box3, #box4, #box5, #box6 {
+            width: 100px;
+            height: 100px;
+            margin:  auto;
+            background: #fff;
+            transition: all 0.3s ease;
+        }
+        #box:hover {
+            width: 150px;
+            height: 150px;
+            background: #f00;
+            border-radius: 10px;
+        }
+
+        #box2:hover {
+            transform: translate(30px, 30px);
+        }
+        #box3:hover {
+            transform: rotate(45deg);
+        }
+        #box4:hover {
+            transform: scale(1.5);
+        }
+        #box5:hover {
+            transform: skew(15deg, 15deg);
+        }
+        #box6:hover {
+            transform: translate3d(0, 0, -100px);
+        }
+    </style>
+	
+</head>
+<body>
+
+	<div class="reveal">
+		<div class="slides">
+
+            <section>
+
+                <section>
+                    <img src="./assets/logo.png" alt="AAU Logo" style="width: 160px;">
+                    <h3>Web Design 2 | WNM 250</h3>
+                    <p>Lecture 4 | September 27th, 2017</p>
+                    <p>
+                        <small>Overview Web Development</small>
+                        <br />
+                        <small>Slides of this lesson you can find it at: <a href="https://husamui.github.io/lesson_4.html">https://husamui.github.io/lesson_4.html</a></small>
+                    </p>
+                </section>
+
+                <section data-background="./assets/responsive.jpg">
+                    <h3>Responsive Web Development</h3>
+                    <p>Fall 2017</p>
+                    <br><br><br><br><br><br>
+                </section>
+
+                <section style="text-align: left;">
+                    <h3>Today</h3>
+                    <p>All About Animations 😀😍</p>
+                    <ul>
+                        <li class="fragment">
+                            <p>Transition<br> <small>Dynamically transition from one state to another in CSS</small></p>
+                        </li>
+
+                        <li class="fragment">
+                            <p>Transform 2D<br> <small>Animate element in 2D across the window</small></p>
+                        </li>
+
+                        <li class="fragment">
+                            <p>Transform 3D<br> <small>Animate element in 3D across the window</small></p>
+                        </li>
+
+                        <li class="fragment">
+                            <p>Build a web gallery<br> <small>Use CSS3 animation in real work example</small></p>
+                        </li>
+                    </ul>
+                </section>
+
+            </section>
+
+            <section>
+                <section>
+                    <h3>Transition</h3>
+                    <p>Transitions enable you to define the transition between two states of an element</p>
+
+<pre class="fragment"><code class="hljs">p{
+    transition: property duration mode delay;
+}</code></pre>
+<pre class="fragment"><code class="hljs">p{
+    transition: color 2s ease-in-out 1s;
+}</code></pre>
+
+                </section>
+
+                <section>
+                    <h3>Transition Demo</h3>
+
+                    <div id="box"></div>
+
+
+<pre class="fragment"><code class="hljs">#box {
+	width: 200px;
+	height: 200px;
+	margin: 100px auto;
+	background: #222;
+	transition: all 0.3s ease;
+}
+#box:hover {
+	width: 250px;
+	height: 250px;
+	background: #f00;
+	border-radius: 20px;
+}</code></pre>
+
+
+                </section>
+
+                <section>
+                    <h3>Transform 2D</h3>
+                    <ul>
+                        <li class="fragment">
+                            <p>Translate<br> <small>Moving an element along the Y-axis X-axis</small></p>
+                        </li>
+                        <li class="fragment">
+                            <p>Rotate<br> <small>Rotates an element around a fixed point on the 2D plane</small></p>
+                        </li>
+
+                        <li class="fragment">
+                            <p>Scale<br> <small>Resizes an element on the 2D plane</small></p>
+                        </li>
+                        <li class="fragment">
+                            <p>Skew<br> <small>Skews an element on the 2D plane</small></p>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Transform Translate Demo</h3>
+
+                    <div id="box2"></div>
+
+
+<pre class="fragment"><code class="hljs">#box {
+	width: 200px;
+	height: 200px;
+	margin: 100px auto;
+	background: #222;
+	transition: all 0.3s ease;
+}
+#box:hover {
+	transform: translate(30px, 30px);
+}</code></pre>
+
+                </section>
+
+                <section>
+                    <h3>Transform Rotate Demo</h3>
+
+                    <div id="box3"></div>
+
+
+<pre class="fragment"><code class="hljs">#box {
+	width: 200px;
+	height: 200px;
+	margin: 100px auto;
+	background: #222;
+	transition: all 0.3s ease;
+}
+#box:hover {
+	transform: rotate(45deg);
+}</code></pre>
+
+                </section>
+
+                <section>
+                    <h3>Transform scale Demo</h3>
+
+                    <div id="box4"></div>
+
+
+                    <pre class="fragment"><code class="hljs">#box {
+	width: 200px;
+	height: 200px;
+	margin: 100px auto;
+	background: #222;
+	transition: all 0.3s ease;
+}
+#box:hover {
+	transform: scale(1.5);
+}</code></pre>
+
+                </section>
+
+                <section>
+                    <h3>Transform skew Demo</h3>
+
+                    <div id="box5"></div>
+
+
+                    <pre class="fragment"><code class="hljs">#box {
+	width: 200px;
+	height: 200px;
+	margin: 100px auto;
+	background: #222;
+	transition: all 0.3s ease;
+}
+#box:hover {
+	transform: skew(15deg, 15deg);
+}</code></pre>
+
+                </section>
+
+
+            </section>
+
+            <section>
+
+                <section>
+                    <h3>Transform 3D</h3>
+                    <p>These transformations include rotation, skewing, scaling, and translation both in the plane and in the 3D space</p>
+
+                    <img class="fragment" src="assets/xyz.png" alt="">
+                </section>
+
+
+                <section>
+                    <h3>Transform translate3D Demo</h3>
+                    <p data-height="369" data-theme-id="0" data-slug-hash="oGZpBw" data-default-tab="css,result" data-user="husamui" data-embed-version="2" data-pen-title="Translate3d" class="codepen">See the Pen <a href="https://codepen.io/husamui/pen/oGZpBw/">Translate3d</a> by Husam Alrubaye (<a href="https://codepen.io/husamui">@husamui</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                </section>
+
+                <section>
+                    <h3>Transform rotateX Demo</h3>
+                    <p data-height="265" data-theme-id="0" data-slug-hash="RLpxxJ" data-default-tab="css,result" data-user="husamui" data-embed-version="2" data-pen-title="Rotate3D" class="codepen">See the Pen <a href="https://codepen.io/husamui/pen/RLpxxJ/">Rotate3D</a> by Husam Alrubaye (<a href="https://codepen.io/husamui">@husamui</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                </section>
+
+            </section>
+            
+            <section>
+                <h3>Let's build a real world animation</h3>
+                <img src="https://media.giphy.com/media/14bE0KvbizSHAs/giphy.gif" alt="">
+            </section>
+
+            <section>
+                <img src="assets/ani_demo.png" alt="">
+            </section>
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+			]
+		});
+	</script>
+</body>
+</html>
