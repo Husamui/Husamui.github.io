@@ -1,0 +1,195 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Academy of art university | Lecture 6</title>
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement( 'link' );
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName( 'head' )[0].appendChild( link );
+	</script>
+
+    <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+
+</head>
+<body>
+
+	<div class="reveal">
+		<div class="slides">
+
+            <section>
+
+                <section>
+                    <img src="./assets/logo.png" alt="AAU Logo" style="width: 160px;">
+                    <h3>Web Design 2 | WNM 250</h3>
+                    <p>Lecture 6 | October 11th, 2017</p>
+                    <p>
+                        <small>Overview Web Development</small>
+                        <br />
+                        <small>Slides of this lesson you can find it at: <a href="https://husamui.github.io/lesson_6.html">https://husamui.github.io/lesson_6.html</a></small>
+                    </p>
+                </section>
+
+                <section data-background="./assets/responsive.jpg">
+                    <h3>Responsive Web Development</h3>
+                    <p>Fall 2017</p>
+                    <br><br><br><br><br><br>
+                </section>
+
+                <section style="text-align: left;">
+                    <h3>Today</h3>
+                    <ul>
+                        <li class="fragment">
+                            <p>SVG 😀😍<br> <small>Prepare SVG for web use, Add SVG to HTML page & use SVG in responsive web design</small></p>
+                        </li>
+
+                        <li class="fragment">
+                            <p>Icon Fonts<br> <small>Discover and use icon fonts tools, Use icon fonts, explain & use UNICODE</small></p>
+                        </li>
+
+                        <li class="fragment">
+                            <p>Video<br> <small>Prepare Video for web use, Add Video to HTML page</small></p>
+                        </li>
+                    </ul>
+                </section>
+
+            </section>
+
+            <section>
+
+                <section data-background="#3A85FF" style="text-align: left;">
+                    <h1>SVG</h1>
+                    <p class="fragment">Scalable Vector Graphics (SVG) is an XML-based vector image format for two-dimensional graphics with support for interactivity and animation</p>
+                    <img class="fragment" style="max-width: 400px;" src="assets/Bitmap_VS_SVG.svg.png" alt="">
+                </section>
+
+                <section data-background="#8F7CFF" style="text-align: left; color: #fff;">
+                    <h3 style="color: #fff;">Prepare SVG for web use</h3>
+                    <p>Using Adobe Illustrator to export high-quality, optimized SVG</p>
+                </section>
+
+                <section data-background="#FFB03A" style="text-align: left; color: #fff;">
+                    <h3 style="color: #fff;">Add SVG in HTML</h3>
+                    <pre style="width: 100%;" class="fragment"><code class="hljs"><img src="assets/logo.svg" alt="Logo"></code></pre>
+                    <h3 class="fragment" style="color: #fff;">Add SVG in CSS</h3>
+                    <pre style="width: 100%;" class="fragment"><code class="hljs">background: url('assets/logo.svg');</code></pre>
+
+                </section>
+
+                <section data-background="#0DB7C5">
+                    <h1 style="color: #fff;">Let's try using SVG</h1>
+                </section>
+
+                <section data-background="#7C40B5" style="text-align: left;">
+                    <h3 style="color: #fff;">CSS3 Gradients</h3>
+                    <pre style="width: 100%;" class="fragment"><code class="hljs">background: linear-gradient(#00b7ea, #009ec3);</code></pre>
+                </section>
+
+                <section data-background="#3369A5">
+                    <h3 style="color: #fff;">Apply SVG in Responsive web design</h3>
+                </section>
+
+            </section>
+
+            <section>
+
+                <section data-background="#5148A1" style="text-align: left;">
+                    <h1>Icon Fonts</h1>
+                    <p>Icon fonts gives you scalable vector icons that can instantly be customized — size, color, drop shadow, and anything that can be done with the power of CSS</p>
+                </section>
+
+                <section data-background="#5148A1" style="text-align: left;">
+                    <h3>IcoMoon</h3>
+                    <p>IcoMoon is free HTML5 app for making custom icon fonts or SVG sprites</p>
+                </section>
+
+                <section data-background="#0DB7C5">
+                    <h1 style="color: #fff;">Let's try using icon fonts</h1>
+                </section>
+
+                <section data-background="#5148A1" style="text-align: left;">
+                    <h3>Unicode</h3>
+                    <p>Unicode is a computing industry standard for the consistent encoding, representation, and handling of text expressed in most of the world's writing systems</p>
+                    <a href="https://unicode.org/charts/">Visit UNICODE</a>
+                </section>
+
+            </section>
+
+
+            <section>
+
+                <section data-background="#5148A1" style="text-align: left;">
+                    <h1>Videos</h1>
+                    <p>Prepare Video for web use</p>
+
+                    <a href="http://www.mirovideoconverter.com/">Miro Video Converter</a>
+                </section>
+
+                <section data-background="#5148A1" style="text-align: left;">
+                    <h3>Use videos in HTML</h3>
+<pre class="fragment"><code class="hljs"><video  controls>
+  <source src="movie.mp4" type="video/mp4">
+    <source src="movie.webm" type="video/webm">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video></code></pre>
+                </section>
+
+
+                <section>
+                    <h3>Homework</h3>
+
+                    <ul>
+                        <li>A video background website</li>
+                        <li>Logo in SVG format</li>
+                        <li>A good use case of font icon</li>
+                    </ul>
+
+                </section>
+
+
+
+
+
+
+
+
+
+            </section>
+
+
+
+        </div>
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+			]
+		});
+	</script>
+</body>
+</html>
