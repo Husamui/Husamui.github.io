@@ -1,0 +1,208 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Academy of art university | Lecture 9</title>
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement( 'link' );
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName( 'head' )[0].appendChild( link );
+	</script>
+
+    <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+
+</head>
+<body>
+
+	<div class="reveal">
+		<div class="slides">
+
+            <section>
+
+                <section>
+                    <img src="./assets/logo.png" alt="AAU Logo" style="width: 160px;">
+                    <h3>Web Design 2 | WNM 250</h3>
+                    <p>Lecture 9 | November 1st, 2017</p>
+                    <p>
+                        <small>Overview Web Development</small>
+                        <br />
+                        <small>Slides of this lesson you can find it at: <a href="https://husamui.github.io/lesson_9.html">https://husamui.github.io/lesson_9.html</a></small>
+                    </p>
+                </section>
+
+                <section data-background="./assets/responsive.jpg">
+                    <h3>Responsive Web Development</h3>
+                    <p>Fall 2017</p>
+                    <br><br><br><br><br><br>
+                </section>
+
+                <section style="text-align: left;">
+                    <h3>Today</h3>
+                    <ul>
+
+                        <li class="fragment">
+                            <p>Basic Math<br> <small>Will do basic Math operation</small></p>
+                        </li>
+
+                        <li class="fragment">
+                            <p>Functions<br> <small>Write and use functions</small></p>
+                        </li>
+
+                        <li class="fragment">
+                            <p>Conditions<br> <small>Write and read javascript variables</small></p>
+                        </li>
+
+
+                    </ul>
+                </section>
+
+            </section>
+
+            <section>
+
+
+                <section data-background="#0DB7C5" style="text-align: left; color: #fff;">
+                    <h3 style="color: #fff;">Math</h3>
+                    <p>JavaScript has the ability to add, subtract, divide, multiply, and a bunch of other math functions we won’t be using right now</p>
+
+                    <pre class="fragment"><code class="hljs">var a = 5 + 7;</code></pre>
+                    <pre class="fragment"><code class="hljs">var b = 9 - 2;</code></pre>
+                    <pre class="fragment"><code class="hljs">var c = 9 / 3;</code></pre>
+                    <pre class="fragment"><code class="hljs">var d = 2 * 3;</code></pre>
+
+                </section>
+
+                <section data-background="#3A85FF" style="text-align: left;">
+                    <h1>Functions</h1>
+                    <p>Functions are at the center of the JavaScript universe. They are the reusable bits of code that execute the commands we program</p>
+                </section>
+                
+                <section>
+                    <img src="assets/func.png" alt="Function">
+                </section>
+
+                <section data-background="#3A85FF" style="text-align: left;">
+                    <h1>Function</h1>
+<pre class="fragment"><code class="hljs">function sayHello() {
+    document.write('Hello');
+}</code></pre>
+<pre class="fragment"><code class="hljs">sayHello();</code></pre>
+                </section>
+
+                <section>
+                    <p>Javascript reserve worlds</p>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Keywords">Zozilla Developer Reference</a>
+                </section>
+
+
+                <section>
+                    <p>Function with arguments</p>
+                    <img src="assets/funcArgv.png" alt="Function">
+                </section>
+
+                <section data-background="#3A85FF" style="text-align: left;">
+                    <h1>Function with arguments</h1>
+                    <pre class="fragment"><code class="hljs">function sayHello(name) {
+    document.write('Hello ' + name);
+}</code></pre>
+<pre class="fragment"><code class="hljs">sayHello('Husam');</code></pre>
+                </section>
+
+
+                <section data-background="#3A85FF" style="text-align: left;">
+                    <h1>Function that return value</h1>
+<pre class="fragment"><code class="hljs">function sum(a, b) {
+   return a + b;
+}</code></pre>
+                    <pre class="fragment"><code class="hljs">sum(5, 2);</code></pre>
+                </section>
+
+            </section>
+
+
+            <section>
+
+
+
+
+                
+                <section data-background="#3A85FF" style="text-align: left;">
+                    <h5>Conditional Statement</h5>
+                    <p>A conditional simply returns a value based on a true/false statement.</p>
+                    <p class="fragment">Example: </p>
+
+                    <p><small class="fragment">If the number is equal to 21, print “You win!”</small></p>
+                    <p><small class="fragment">If the number is greater than 21, print “BUST!”</small></p>
+                </section>
+
+                <section data-background="#3A85FF" style="text-align: left;">
+                    <p>Let’s look at the anatomy of an if/else statement:</p>
+ <pre class="fragment"><code class="hljs">if(condition) {
+    // Do something here
+ } else {
+    // Do something else here
+ }</code></pre>
+
+ <pre class="fragment"><code class="hljs">if(score > 10) {
+    document.write('You won!');
+ } else {
+    document.write('Game over!');
+ }</code></pre>
+                </section>
+
+                <section data-background="#3A85FF" style="text-align: left;">
+                    <h1>operators</h1>
+                    <img src="assets/oper.png" alt="operators ">
+                </section>
+
+                <section data-background="#8F7CFF" style="text-align: left; color: #fff;">
+                    <h3 style="color: #fff;">Write to HTML</h3>
+
+                    <pre class="fragment"><code class="hljs">document.getElementById('box').innerHTML = "Hello, World1"</code></pre>
+
+                </section>
+
+            </section>
+
+            <section>
+                <h3>Home Work</h3>
+                <p><a href="https://www.javascript.com/learn/javascript/variables">Read About Javascript Variables</a></p>
+                <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions">Read About Javascript Functions</a></p>
+                <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else">Read About Javascript if statement</a></p>
+            </section>
+
+
+        </div>
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+			]
+		});
+	</script>
+</body>
+</html>
