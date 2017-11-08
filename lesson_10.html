@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Academy of art university | Lecture 10</title>
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement( 'link' );
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName( 'head' )[0].appendChild( link );
+	</script>
+
+    <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+
+</head>
+<body>
+
+	<div class="reveal">
+		<div class="slides">
+
+            <section>
+
+                <section>
+                    <img src="./assets/logo.png" alt="AAU Logo" style="width: 160px;">
+                    <h3>Web Design 2 | WNM 250</h3>
+                    <p>Lecture 10 | November 8th, 2017</p>
+                    <p>
+                        <small>Overview Web Development</small>
+                        <br />
+                        <small>Slides of this lesson you can find it at: <a href="https://husamui.github.io/lesson_10.html">https://husamui.github.io/lesson_10.html</a></small>
+                    </p>
+                </section>
+
+                <section data-background="./assets/responsive.jpg">
+                    <h3>Responsive Web Development</h3>
+                    <p>Fall 2017</p>
+                    <br><br><br><br><br><br>
+                </section>
+
+                <section style="text-align: left;">
+                    <h3>Today</h3>
+                    <ul>
+
+                        <li class="fragment">
+                            <p>DOM Manipulation<br> <small>Write and Change the HTML</small></p>
+                        </li>
+
+                        <li class="fragment">
+                            <p>Javascript Styling<br> <small>Using Javascript to Manipulation Element CSS</small></p>
+                        </li>
+
+                        <li class="fragment">
+                            <p>Javascript Events<br> <small>Listen to DOM Events and Fire Functions on Them</small></p>
+                        </li>
+
+                        <li class="fragment">
+                            <p>More DOM Manipulation<br> <small>Will Change and Update Element Attributes</small></p>
+                        </li>
+
+
+                    </ul>
+                </section>
+
+            </section>
+
+            <section>
+
+
+                <section data-background="#0DB7C5" style="text-align: left; color: #fff;">
+                    <h3 style="color: #fff;">DOM</h3>
+                    <p>Document Object Module</p>
+                    <p class="fragment"><small>HTML Document Representation</small></p>
+                </section>
+
+                <section data-background="#3A85FF" style="text-align: left;">
+                    <h1>Write to the HTML</h1>
+                    <p  class="fragment">You need to steps to write to the HTML Element</p>
+                    <ol>
+                        <li class="fragment">Reference to the element to write into</li>
+                        <li class="fragment">Use the <span class="green">innerHTML</span> to write new values</li>
+                    </ol>
+                </section>
+
+                <section data-background="#3A85FF" style="text-align: left;">
+                    <pre><code class="hljs"><p id="title"></p></code></pre>
+                    <pre class="fragment"><code class="hljs">var title = document.getElementById('title');</code></pre>
+                    <pre class="fragment"><code class="hljs">title.innerHTML = 'Hello, World!';</code></pre>
+                </section>
+
+                <section data-background="#0DB7C5" style="text-align: left; color: #fff;">
+                    <h3 style="color: #fff;">Javascript Styling</h3>
+                    <pre class="fragment"><code class="hljs">element.style.backgroundColor = 'red';</code></pre>
+                </section>
+                
+
+                <section data-background="#3A85FF" style="text-align: left;">
+                    <h1>Dom Events</h1>
+                    <p>DOM Events are sent to notify code of interesting things that have taken place</p>
+                </section>
+
+                <section style="text-align: left;">
+                    <p>Event Listener</p>
+                    <pre class="fragment"><code>addEventListener(event, function)</code></pre>
+                    <pre class="fragment"><code>element.addEventListener('click', updateBox)</code></pre>
+                    <pre class="fragment"><code>function updateBox(){
+    element.style.backgroundColor = 'red';
+}</code></pre>
+
+                </section>
+
+                <section style="text-align: left;">
+                    <p>Set Attribute</p>
+                    <pre class="fragment"><code>element.setAttribute(name, value)</code></pre>
+                    <pre class="fragment"><code>element.setAttribute('class', 'primary-background')</code></pre>
+                </section>
+
+                <section style="text-align: left;">
+                    <p>Demo</p>
+                    <p>Set body background dynamically</p>
+                </section>
+
+
+                <section style="text-align: left;">
+                    <p>Build a Side Menu</p>
+                    <p>We will javascript to show and hide side menu</p>
+                </section>
+
+
+                <section style="text-align: left;">
+                    <p>Toggle Class</p>
+                    <pre class="fragment"><code>var menu = document.getElementById('menu')</code></pre>
+                    <pre class="fragment"><code>menu.classList.toggle('className')</code></pre>
+                </section>
+
+
+
+            </section>
+
+
+            <section>
+                <h3>Home Work</h3>
+                <p>On mobile, Hide the navbar and show toggle button, clicking on that toggle button will show or hide the navbar on mobile</p>
+            </section>
+
+
+        </div>
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+			]
+		});
+	</script>
+</body>
+</html>
