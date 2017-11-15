@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Academy of art university | Lecture 11</title>
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement( 'link' );
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName( 'head' )[0].appendChild( link );
+	</script>
+
+    <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+
+</head>
+<body>
+
+	<div class="reveal">
+		<div class="slides">
+
+            <section>
+
+                <section>
+                    <img src="./assets/logo.png" alt="AAU Logo" style="width: 160px;">
+                    <h3>Web Design 2 | WNM 250</h3>
+                    <p>Lecture 11 | November 15th, 2017</p>
+                    <p>
+                        <small>Overview Web Development</small>
+                        <br />
+                        <small>Slides of this lesson you can find it at: <a href="https://husamui.github.io/lesson_14.html">https://husamui.github.io/lesson_14.html</a></small>
+                    </p>
+                </section>
+
+                <section data-background="./assets/responsive.jpg">
+                    <h3>Responsive Web Development</h3>
+                    <p>Fall 2017</p>
+                    <br><br><br><br><br><br>
+                </section>
+
+                <section style="text-align: left;">
+                    <h3>Today</h3>
+                    <ul>
+
+                        <li class="fragment">
+                            <p>jQuery<br> <small>Setup & Optimize</small></p>
+                        </li>
+
+                        <li class="fragment">
+                            <p>jQuery Selectors<br> <small>Using jQuery to Manipulate the Dom</small></p>
+                        </li>
+
+                        <li class="fragment">
+                            <p>jQuery Effects<br> <small>jQuery animations</small></p>
+                        </li>
+
+                        <li class="fragment">
+                            <p>Click Function<br> <small>Listen to Dom events through jquery</small></p>
+                        </li>
+
+
+                    </ul>
+                </section>
+
+            </section>
+
+            <section>
+
+
+                <section data-background="#0DB7C5" style="text-align: left; color: #fff;">
+                    <h3 style="color: #fff;">jQuery</h3>
+                    <p>jQuery: The Write Less, Do More, JavaScript Library.</p>
+                    <p class="fragment"><small>jQuery is a cross-platform JavaScript library designed to simplify the client-side scripting of HTML</small></p>
+                </section>
+
+                <section data-background="#3A85FF" style="text-align: left;">
+                    <h1>Setup</h1>
+                    <ol>
+                        <li class="fragment"><a style="color: #fff;" href="https://html5boilerplate.com/">HTML5 Boilerplate</a></li>
+                        <li class="fragment"><a style="color: #fff;" href="https://jquery.com/">jQuery website</a></li>
+                        <li class="fragment"><a style="color: #fff;" href="https://developers.google.com/speed/libraries/">Google Hosted Libraries</a></li>
+                    </ol>
+                </section>
+
+                <section data-background="#3A85FF" style="text-align: left;">
+                    <p>jquery ready function</p>
+                    <p class="fragment">The ready event occurs when the DOM (document object model) has been loaded.</p>
+                    <pre class="fragment"><code class="hljs">$(document).ready(function(){
+    // Your code goes here...
+})</code></pre>
+                </section>
+
+            </section>
+
+            <section>
+
+                <section data-background="#0DB7C5" style="text-align: left; color: #fff;">
+                    <h3 style="color: #fff;">jQuery Selectors</h3>
+                    <p class="fragment">jQuery Borrowing from CSS offers a powerful set of tools for matching a set of elements in a document</p>
+                    <pre class="fragment"><code class="hljs">$(".box")</code></pre>
+                </section>
+
+
+                <section data-background="#3A85FF" style="text-align: left;">
+                    <h1>Update DOM element</h1>
+                    <pre class="fragment"><code class="hljs">$(".box").html("<h1>Hello, World!</h1>");</code></pre>
+                    <pre class="fragment"><code class="hljs">$(".box").text("Hello, World!");</code></pre>
+                </section>
+
+
+
+                <section style="text-align: left;">
+                    <p>jQuery CSS</p>
+                    <pre class="fragment"><code>$(".box").css('background-color','#000');</code></pre>
+                </section>
+
+            </section>
+            <section>
+
+                <section style="text-align: left;">
+                    <p>jQuery Effects</p>
+                    <ul>
+                        <li class="fragment">Hide</li>
+                        <li class="fragment">Show</li>
+                        <li class="fragment">FadeOut</li>
+                        <li class="fragment">FadeIn</li>
+                    </ul>
+                    <pre class="fragment"><code>$(".box").hide(4000);</code></pre>
+                    <pre class="fragment"><code>$(".box").fadeIn(1000);</code></pre>
+                </section>
+
+            </section>
+
+            <section>
+
+                <section style="text-align: left;">
+                    <p>jQuery Events Listener</p>
+                    <p><small>Click Function</small></p>
+
+                    <pre class="fragment"><code>$(".button").click(function);</code></pre>
+                    <pre class="fragment"><code>$(".button").click(function(){
+    // Do something here...
+});</code></pre>
+                </section>
+
+
+                <section style="text-align: left;">
+                    <p>More jQuery Effect</p>
+                    <ul>
+                        <li class="fragment">SlideUp</li>
+                        <li class="fragment">SlideDown</li>
+                        <li class="fragment">SlideToggle</li>
+                    </ul>
+                    <pre class="fragment"><code>$(".box").slideUp(4000);</code></pre>
+                    <pre class="fragment"><code>$(".box").slideDown(4000);</code></pre>
+                    <pre class="fragment"><code>$(".box").slideToggle(4000);</code></pre>
+                </section>
+
+
+                <section style="text-align: left;">
+                    <p>Toggle Class</p>
+                    <pre class="fragment"><code>$(".box").toggleClass('active');</code></pre>
+                </section>
+
+
+
+            </section>
+
+
+            <section>
+                <h3>Home Work</h3>
+                <p>Create Overlay PopUp Box</p>
+                <ul>
+                    <li>A button user would click to show popup box will overlay of the page</li>
+                    <li>The popup will have close button, if the user clicked will close the box</li>
+                    <li>If user clicked outside the box should close the box</li>
+                </ul>
+            </section>
+
+        </div>
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+			]
+		});
+	</script>
+</body>
+</html>
