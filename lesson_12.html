@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Academy of art university | Lecture 12</title>
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement( 'link' );
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName( 'head' )[0].appendChild( link );
+	</script>
+
+    <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+
+</head>
+<body>
+
+	<div class="reveal">
+		<div class="slides">
+
+            <section>
+
+                <section>
+                    <img src="./assets/logo.png" alt="AAU Logo" style="width: 160px;">
+                    <h3>Web Design 2 | WNM 250</h3>
+                    <p>Lecture 12 | November 22nd, 2017</p>
+                    <p>
+                        <small>Overview Web Development</small>
+                        <br />
+                        <small>Slides of this lesson you can find it at: <a href="https://husamui.github.io/lesson_12.html">https://husamui.github.io/lesson_12.html</a></small>
+                    </p>
+                </section>
+
+                <section data-background="./assets/responsive.jpg">
+                    <h3>Responsive Web Development</h3>
+                    <p>Fall 2017</p>
+                    <br><br><br><br><br><br>
+                </section>
+
+                <section style="text-align: left;">
+                    <h3>Today</h3>
+                    <ul>
+
+                        <li class="fragment">
+                            <p>jQuery Animation<br> <small>More of jQuery animation</small></p>
+                        </li>
+
+                        <li class="fragment">
+                            <p>jQuery Plug-ins<br> <small>Expand jQuery</small></p>
+                        </li>
+
+                        <li class="fragment">
+                            <p>Slideshow plug-in<br> <small>Using jQuery flexslider to Create Slideshow</small></p>
+                        </li>
+
+                        <li class="fragment">
+                            <p>Sticky Header plug-in<br> <small>It makes an element fixed or “sticky” when the window is scrolled to a specific location</small></p>
+                        </li>
+
+
+                    </ul>
+                </section>
+
+            </section>
+
+            <section>
+
+                <section>
+                    <h3>Scroll to top</h3>
+                    <pre class="fragment"><code class="hljs">$('#back-to-top').click(function(){
+    $('body,html').animate({scrollTop: 0}, 400);
+        });
+});</code></pre>
+                </section>
+
+                <section data-background="#0DB7C5" style="text-align: left; color: #fff;">
+                    <h3 style="color: #fff;">jQuery Plug-ins</h3>
+                    <p>plugins enable you to create richer and more advanced interactions without writing the code yourself</p>
+                </section>
+
+                <section data-background="#3A85FF" style="text-align: left;">
+                    <h1>Slideshow</h1>
+                    <p>FlexSlider offers the best combination of responsiveness, ease of use, and options. The first thing you will need to do is download FlexSlider.</p>
+                </section>
+
+                <section data-background="#3A85FF" style="text-align: left;">
+                    <p>Setup the html</p>
+                    <img src="assets/slide.png" alt="">
+                </section>
+
+                <section data-background="#3A85FF" style="text-align: left;">
+                    <p>call the plug-in with options</p>
+                    <img src="assets/slide2.png" alt="">
+                </section>
+
+
+            </section>
+
+            <section>
+
+                <section data-background="#0DB7C5" style="text-align: left; color: #fff;">
+                    <h3 style="color: #fff;">StickyJS</h3>
+                    <p class="fragment">StickyJS does one thing: It makes an element fixed or “sticky” when the window is scrolled to a specific location</p>
+                </section>
+
+                <section data-background="#0DB7C5" style="text-align: left; color: #fff;">
+                    <p>To make an element Sticky</p>
+                    <img src="assets/sticky.png" alt="" class="fragment">
+                </section>
+
+
+                <section data-background="#3A85FF" style="text-align: left;">
+                    <h1>Random Background Image</h1>
+                    <img src="assets/random.png" alt="" class="fragment">
+                </section>
+
+
+
+            </section>
+
+        </div>
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+			]
+		});
+	</script>
+</body>
+</html>
